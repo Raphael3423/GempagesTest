@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fefefe;
+}
+
+/* Header Begin */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: #fefefe;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 100px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+
+.header-logo img {
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.harburger {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: #111b11;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: #fefefe;
+    background-color: #111b11;
+}
+
+.nav-bar ul li a.active {
+    color: #fefefe;
+    background-color: #111b11;
+}
+/* Header end */
+/* Hero Banner Begin */
+.hero-banner {
+    height: 500px;
+    max-width: 95%;
+    padding:150px 0;
+    width: 100%;
+    margin: 5px auto;
+    background-image: url(images/BG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    color: #fefefe;
+   
+    
+}
+.over-lay{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+.hero-banner h1 {
+    font-size: 40px;
+}
+
+.hero-banner p {
+    font-size: 18px;
+}
+
+.hero-banner button {
+    padding: 10px;
+    margin-top: 2px;
+    cursor: pointer;
+    font-size: 20px;
+    border: none;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+.hero-banner button:hover {
+    background-color: #111b11;
+    color: #fefefe;
+    transition: 0.5s;
+}
+
+/* Hero Banner end */
+/* Items-List */
+.items-list{
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 25px;
+    height: 200px;
+    max-width: 80%;
+    display: flex;
+    justify-content: space-around;
+}
+.list1{
+    width: 40%;
+    height: 100%;
+    background-image: url(images/Items2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.list2{
+    width: 27%;
+    height: 100%;
+    background-image: url(images/items\ 1.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   position: relative;
+}
+.list3{
+    width: 27%;
+    height: 100%;
+    background-image: url(images/Item3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    
+}
+.list1 button{
+    position: absolute;
+    top: 70%;
+    right: 10%;
+    padding: 7px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.list1 button:hover{
+    background-color: #111b11;
+    color: #fefefe;
+    transition: 0.5s;
+}
+.list2 button{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    padding: 7px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.list2 button:hover{
+    background-color: #111b11;
+    color: #fefefe;
+    transition: 0.5s;
+}
+.list3 button{
+    position: absolute;
+    top: 70%;
+    right: 30%;
+    padding: 7px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.list3 button:hover{
+    background-color: #111b11;
+    color: #fefefe;
+    transition: 0.5s;
+}
+/* Item-List End */
+/* Newsletter Begin */
+.newsletter{
+    width: 100%;
+    margin: 20px auto;
+    height: 250px;
+    max-width: 78.7%;
+    border-top: 1px solid rgb(240, 232, 232);
+    border-bottom: 1px solid rgb(240, 232, 232);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.newsletter input{
+    width: 500px;
+    border: none;
+    border-bottom:1px solid rgb(240, 232, 232);
+    margin: 15px 0;
+    position: relative;
+    outline: none;
+   
+}
+.newsletter span{
+    position: absolute;
+    right: 27%;
+ 
+}
+.newsletter span button{
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+/* Newsletter end */
+@media only screen and (max-width:1320px) {
+    header {
+        padding: 0 50px;
+    }
+
+}
+
+@media only screen and (max-width:1100px) {
+    header {
+        padding: 0 30px;
+    }
+
+}
+
+@media only screen and (max-width:900px) {
+    header {
+        justify-content: space-between;
+    }
+    .harburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .harburger .line {
+        width: 30px;
+        height: 3px;
+        background-color: #111b11;
+        margin: 6px 0;
+    }
+
+    .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #111b11;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 500px;
+    }
+
+    .nav-bar ul li a {
+        color: #fefefe;
+    }
+
+    .nav-bar ul li a:hover {
+        color: #111b11;
+        background-color: #fefefe;
+    }
+
+    .nav-bar ul li a.active {
+        color: #111b11;
+        background-color: #fefefe;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 12px;
+    }
+    .hero-banner {
+        height: 400px;
+        max-width: 100%;
+        width: 100%;
+}
+.newsletter input{
+    width: 250px;
+}
+}
+@media screen and (max-width: 767px){
+.items-list{
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-top: 25px;
+    height: 500px;
+
+    display: flex;
+    justify-content: space-around
+}
+.list1{
+    width: 100%;
+    height: 500px;
+    position: relative;
+    margin-bottom: 10px;
+}
+.list2{
+    width: 100%;
+    height: 500px;
+    margin-bottom: 10px;
+}
+.list3{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(240, 232, 232);
+    position: relative;
+    
+}
+}
